@@ -1,5 +1,5 @@
 function _tide_pwd_var_change -v PWD
-    set -l preDirNumberPwd (string replace $HOME '~' $PWD)
+    set -l preDirNumberPwd (string replace "$HOME" '~' "$PWD")
     set -l preDirNumberPwdSplit (string split '/' $preDirNumberPwd)
 
     set -g _tide_split_pwd $preDirNumberPwdSplit[(math -s0 -$tide_pwd_max_dirs)..-1]
