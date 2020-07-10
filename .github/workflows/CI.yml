@@ -27,4 +27,4 @@ jobs:
 
       - name: Run all tests
         shell: fish {0}
-        run: set TERM xterm && tide_test -a
+        run: tide_test -a
