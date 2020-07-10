@@ -81,6 +81,8 @@ end
 function _set_immutables
     set -U _tide_var_immutable_list
 
+    set -gx TERM xterm
+
     _set_immutable _tide_file_list
     for file in $tempDir/{completions/*, conf.d/*, functions/*}
         set -a _tide_file_list (string replace "$tempDir/" '' "$file")
