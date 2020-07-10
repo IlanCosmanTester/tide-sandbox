@@ -6,7 +6,7 @@ function tide_test
         return 0
     end
 
-    set TERM xterm
+    set -gx TERM xterm
 
     set -l testsDir "$__fish_config_dir/tests"
 
