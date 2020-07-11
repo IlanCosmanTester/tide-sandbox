@@ -19,7 +19,7 @@ Tide is a [Fish][] theme that provides a powerful, flexible, and out-of-the-box 
 - [fish][] ≥3.1
 - [git][]
 
-## Features
+## Featuresdsadsa
 
 ### Configuration Wizard
 
