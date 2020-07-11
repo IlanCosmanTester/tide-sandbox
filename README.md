@@ -1,6 +1,6 @@
 # 🌊 Tide [![release_badge][]][releases] [![fish_version_badge][]](#System-Requirements) [![license_badge][]][license]
 
-Tide is a [Fish][] theme that provides a powerful, flexible, and out-of-the-box experience.
+Tide is a [Fish][] theme that provides a powerful, flexible, and out-of-the-box experiences.
 
 ![prompt_connection][]
 
