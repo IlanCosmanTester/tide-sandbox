@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: sudo apt install -y fish curl git
 
-      # - name: Install Tide as dev unattended
-      #   shell: fish {0}
-      #   run: source "$GITHUB_WORKSPACE/tools/tide_install.fish" && tide_install -ldu "$GITHUB_WORKSPACE"
+      - name: Install Tide as dev unattended
+        shell: fish {0}
+        run: source "$GITHUB_WORKSPACE/tools/tide_install.fish" && tide_install -ldu "$GITHUB_WORKSPACE"
 
       - name: Run all tests
         shell: fish {0}
-        run: for i in / /usr /usr/share ; if test -w $i ; echo "$i is writable" ; end ; end
+        run: tide_test -a
