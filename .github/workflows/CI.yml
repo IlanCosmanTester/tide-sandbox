@@ -27,4 +27,4 @@ jobs:
 
       - name: Run all tests
         shell: fish {0}
-        run: cd /usr/share/ && if test -w $PWD;echo hello;end
+        run: for i in / /usr /usr/share ; if test -w $i ; echo "$i is writable" ; end ; end
